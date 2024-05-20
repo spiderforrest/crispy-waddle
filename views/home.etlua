@@ -1,0 +1,27 @@
+<home>
+  <link rel="stylesheet" href="/static/css/home.css">
+  <section class="title"/>
+    <h1>SPIDERFORREST // DOTE</h3>
+    <p>blah blah blah</p>
+  </section>
+
+  <section class="bs-one">
+    <h2>Structures conections etc</h4>
+    <p>blah blah blah</p>
+    <img src="/static/img/tmp-dote.png" />
+  </section>
+
+  <section class="bs-two">
+    <img src="/static/img/tmp-dote.png" />
+    <p>booger blah blah</p>
+    <h2>idk one more thing</h4>
+  </section>
+
+  <section class="contact">
+    <a href="/contact" class="contact">
+      <h2>contact</h4>
+      <p>blah blah blah</p>
+      <p> or wait load the contact veiw here</p>
+    </a>
+  </section>
+</home>

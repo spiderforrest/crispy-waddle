@@ -1,0 +1,42 @@
+home {
+  background-color: darkslategrey;
+}
+
+home * {
+  padding: 6px;
+  border-radius: 20px;
+}
+
+home a {
+  color: black;
+  text-decoration: none;
+}
+
+/* grid layout */
+home {
+  display: grid;
+  grid-template: repeat(4, 600px) / 1fr;
+}
+
+home section.title { grid-area: 1; }
+home section.bs-one { grid-area: 2; }
+home section.bs-two { grid-area: 3; }
+home section.contact { grid-area: 4; }
+
+home section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+home section.title {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+home img {
+  max-height: 400px;
+}

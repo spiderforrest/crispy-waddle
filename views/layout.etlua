@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SPIDERFORREST</title>
+    <link rel="stylesheet" href="/static/css/layout.css">
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" id="primary-nav">
+        <a href="/"><img src="/favicon.ico"/></a>
+        <ul class="navlist">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <% content_for("inner") %>
+    <footer>
+      <p>spide</p>
+      <p>dote@spiderforrest.com</p>
+      <p>^_^</p>
+  </body>
+</html>
