@@ -1,7 +1,3 @@
-home {
-  background-color: darkslategrey;
-}
-
 home * {
   padding: 6px;
   border-radius: 20px;
@@ -12,23 +8,26 @@ home a {
   text-decoration: none;
 }
 
+home img {
+  max-height: 400px;
+}
+
 /* grid layout */
 home {
   display: grid;
   grid-template: repeat(4, 600px) / 1fr;
 }
-
-home section.title { grid-area: 1; }
-home section.bs-one { grid-area: 2; }
-home section.bs-two { grid-area: 3; }
+home section.title   { grid-area: 1; }
+home section.bs-one  { grid-area: 2; }
+home section.bs-two  { grid-area: 3; }
 home section.contact { grid-area: 4; }
 
 home section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1; /* go behind the header, chrome janks without this, thanks google */
 }
-
 
 home section.title {
   justify-content: center;
@@ -36,7 +35,17 @@ home section.title {
   flex-direction: column;
 }
 
+home section.bs-two {
+  flex-direction: row-reverse;
+}
 
-home img {
-  max-height: 400px;
+home section.bs-one, home section.contact {
+  background-color: rgba(255,255,255,0.25);
+}
+
+
+@media (max-width: 900px) {
+  home section, home section.bs-two /* specificity hack */ {
+    flex-direction: column; /* squishhh */
+  }
 }

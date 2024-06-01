@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <title>SPIDERFORREST</title>
     <link rel="stylesheet" href="/static/css/layout.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+
     <header>
       <nav role="navigation" id="primary-nav">
-        <a href="/"><img src="/favicon.ico"/></a>
+        <a href="<%= url_for('home') %>"><img src="/favicon.ico"/></a>
         <ul class="navlist">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="<%= url_for('home') %>">Home</a></li>
+          <li><a href="<%= url_for('about') %>">About</a></li>
+          <li><a href="<%= url_for('contact') %>">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <% content_for("inner") %>
-    <footer>
-      <p>spide</p>
-      <p>dote@spiderforrest.com</p>
-      <p>^_^</p>
+
+    <div class="content-wrapper">
+      <% content_for("inner") %>
+    </div>
+
+      <footer>
+        <p>spide</p>
+        <p>dote@spiderforrest.com</p>
+        <p class="qt">^_^</p>
+      </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+
   </body>
 </html>

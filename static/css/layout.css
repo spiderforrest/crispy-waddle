@@ -1,4 +1,13 @@
-body { margin: 0px; } /* reset a default */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/* body section */
+body {
+  margin: 0px; /* reset a stupid default */
+  background-color: lightskyblue;
+}
 
 
 /* header section */
@@ -8,9 +17,16 @@ header {
   width: 100%;
   height: 40px;
   background-color: #1472c0;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
 }
 
 header .navlist {
+  flex-grow: 100;
   margin: 0px;
   height: 40px;
   display: flex;
@@ -29,16 +45,28 @@ header a {
 header img {
   height: 40px;
   width: 40px;
-  position: fixed;
+  border-radius: 100%;
+}
+
+header img, .qt {
+ 	transition:transform 1s ease; /* these go outside the trigger bc toggling it off makes it snap */
+}
+
+header img:hover, .qt:hover {
+  /* voidlinux made me love doing this */
+  transform: rotate(360deg);
 }
 
 
-
 /* footer section */
+.content-wrapper {
+  margin-bottom: 50px;
+}
+
 footer {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+
   display: flex;
   justify-content: space-around;
   background-color: #1472c0;

@@ -1,27 +1,30 @@
 <home>
   <link rel="stylesheet" href="/static/css/home.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <section class="title"/>
-    <h1>SPIDERFORREST // DOTE</h3>
+    <h1>SPIDERFORREST // DOTE</h1>
     <p>blah blah blah</p>
   </section>
 
-  <section class="bs-one">
-    <h2>Structures conections etc</h4>
+  <section class="bs-one" data-aos="fade-right">
+    <h2>Structures conections etc</h2>
     <p>blah blah blah</p>
     <img src="/static/img/tmp-dote.png" />
   </section>
 
-  <section class="bs-two">
-    <img src="/static/img/tmp-dote.png" />
+  <section class="bs-two" data-aos="fade-left">
+    <h2>idk one more thing</h2>
     <p>booger blah blah</p>
-    <h2>idk one more thing</h4>
+    <img src="/static/img/tmp-dote.png" />
   </section>
 
-  <section class="contact">
-    <a href="/contact" class="contact">
-      <h2>contact</h4>
+  <section class="contact" data-aos="fade-up">
+    <!-- <a href="/contact" class="contact"> -->
+      <h2>contact</h2>
       <p>blah blah blah</p>
-      <p> or wait load the contact veiw here</p>
-    </a>
+      <p>or wait load the contact view here</p>
+      <% render("views.contact") %>
+    <!-- </a> -->
   </section>
 </home>
