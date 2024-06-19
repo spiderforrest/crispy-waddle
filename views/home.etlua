@@ -2,29 +2,27 @@
   <link rel="stylesheet" href="/static/css/home.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <section class="title"/>
+  <section class="title">
     <h1>SPIDERFORREST // DOTE</h1>
-    <p>blah blah blah</p>
+    <p>Everything you need. All in one place</p>
+    <p>That's DOTE.</p>
   </section>
 
   <section class="bs-one" data-aos="fade-right">
-    <h2>Structures conections etc</h2>
-    <p>blah blah blah</p>
+    <h2>Flexible and Dependable</h2>
+    <p>Three types of items--tags, todos, and notes--let you track and organize everything you need to remember, no matter what it is.<br/>Then, see it all at a glance from the overview tab.</p>
     <img src="/static/img/tmp-dote.png" />
   </section>
 
   <section class="bs-two" data-aos="fade-left">
-    <h2>idk one more thing</h2>
-    <p>booger blah blah</p>
-    <img src="/static/img/tmp-dote.png" />
+    <h2>Organize your information, your way.</h2>
+    <p>Items can nest and stack with each other, for representing dependencies, subtasks, or whatever else you need.<br/>Struggle with keeping your to-do list organized? With Dote, it's easy to see which items relate to others and how.<br/>Organizational tools like tags let you feel less overwhelmed and in control.</p>
+    <img src="/static/img/graph.png" />
   </section>
 
   <section class="contact" data-aos="fade-up">
-    <!-- <a href="/contact" class="contact"> -->
-      <h2>contact</h2>
-      <p>blah blah blah</p>
-      <p>or wait load the contact view here</p>
+      <h2>Contact us!</h2>
+      <p>Questions, comments, interest?</p>
       <% render("views.contact") %>
-    <!-- </a> -->
   </section>
 </home>

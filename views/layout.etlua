@@ -5,6 +5,10 @@
     <title>SPIDERFORREST</title>
     <link rel="stylesheet" href="/static/css/layout.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -13,7 +17,6 @@
         <a href="<%= url_for('home') %>"><img src="/favicon.ico"/></a>
         <ul class="navlist">
           <li><a href="<%= url_for('home') %>">Home</a></li>
-          <li><a href="<%= url_for('about') %>">About</a></li>
           <li><a href="<%= url_for('contact') %>">Contact</a></li>
         </ul>
       </nav>
@@ -24,7 +27,7 @@
     </div>
 
       <footer>
-        <p>spide</p>
+        <p>By Spider Forrest and Allie Zhao</p>
         <p>dote@spiderforrest.com</p>
         <p class="qt">^_^</p>
       </footer>
